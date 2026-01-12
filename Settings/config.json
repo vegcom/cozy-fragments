@@ -9,7 +9,7 @@
     ],
 
 
-  "opacity": 100,
+  "opacity": 90,
   "useAcrylic": false,
   "suppressApplicationTitle": true,
 
@@ -18,7 +18,10 @@
   "closeOnExit": "never",
   "historySize": 500,
 
+
   "defaultProfile": "pwsh",
+
+
   "profiles": {
     "defaults": {
         "font": {
@@ -36,4 +39,5 @@
         }
     }
   }
+
 }
