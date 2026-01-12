@@ -1,0 +1,5 @@
+{
+    "environment": {
+        "COZY_ICONS": "%ProgramData%\\WT\\icons"
+    }
+}

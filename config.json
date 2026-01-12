@@ -1,0 +1,39 @@
+{
+    "disabledProfileSources": [
+        "Windows.Terminal.Wsl",
+        "Windows.Terminal.Azure",
+        "Windows.Terminal.PowershellCore",
+        "Windows.Terminal.SSH"
+    ],
+
+    "opacity": 100,
+    "useAcrylic": false,
+    "suppressApplicationTitle": true,
+    
+    "bellStyle": "taskbar",
+    "closeOnExit": "never",
+    "historySize": 500,
+
+    "profiles": {
+        "defaults": {
+            "font": { "face": "FiraCode Nerd Font" },
+            "opacity": 80
+        }
+    },
+
+    "keybindings": 
+    [
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        }
+    ],
+}

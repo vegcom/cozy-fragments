@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "list": [
+      {
+        "commandline": "pwsh",
+        "hidden": false,
+        "icon": "🌻",
+        "name": "pwsh",
+        "startingDirectory": "%USERPROFILE%"
+      }
+    ]
+  }
+}

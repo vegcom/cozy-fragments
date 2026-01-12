@@ -1,0 +1,33 @@
+{
+  "profiles": {
+    "list": [
+      {
+        "commandline": "ssh guava",
+        "icon": "%COZY_ICONS%/guava.png",
+        "name": "guava"
+      },
+      {
+        "commandline": "ssh bokchoy",
+        "icon": "%COZY_ICONS%/bokchoy.png",
+        "name": "bokchoy"
+      },
+      {
+        "commandline": "ssh banana",
+        "icon": "%COZY_ICONS%/banana.png",
+        "name": "banana"
+      },
+      {
+        "commandline": "ssh persimmon",
+        "hidden": false,
+        "icon": "%COZY_ICONS%/persimmon.png",
+        "name": "persimmon"
+      },
+      {
+        "commandline": "ssh pomegranate",
+        "hidden": false,
+        "icon": "%COZY_ICONS%/pomegranate.png",
+        "name": "pomegranate"
+      }
+    ]
+  }
+}

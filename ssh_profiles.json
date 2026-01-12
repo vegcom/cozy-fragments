@@ -1,0 +1,17 @@
+{
+  "newTabMenu": [
+    {
+      "type": "folder",
+      "name": "ssh",
+      "inline": "never",
+      "allowEmpty": false,
+      "entries": [
+        { "type": "profile", "profile": "guava" },
+        { "type": "profile", "profile": "bokchoy" },
+        { "type": "profile", "profile": "banana" },
+        { "type": "profile", "profile": "persimmon" },
+        { "type": "profile", "profile": "pomegranate" }
+      ]
+    }
+  ]
+}
