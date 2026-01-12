@@ -1,39 +1,41 @@
 {
-    "disabledProfileSources": [
-        "Windows.Terminal.Wsl",
-        "Windows.Terminal.Azure",
-        "Windows.Terminal.PowershellCore",
-        "Windows.Terminal.SSH"
-    ],
 
-    "opacity": 100,
-    "useAcrylic": false,
-    "suppressApplicationTitle": true,
-    
-    "bellStyle": "taskbar",
-    "closeOnExit": "never",
-    "historySize": 500,
+  "disabledProfileSources": [
+    "Windows.Terminal.Wsl",
+    "Microsoft.WSL",
+    "Windows.Terminal.Azure",
+    "Windows.Terminal.PowershellCore",
+    "Windows.Terminal.SSH",
+    "Windows.Terminal.VisualStudio",
+    "Default"
+  ],
 
-    "profiles": {
-        "defaults": {
-            "font": { "face": "FiraCode Nerd Font" },
-            "opacity": 80
-        }
-    },
 
-    "keybindings": 
-    [
-        {
-            "id": "Terminal.CopyToClipboard",
-            "keys": "ctrl+c"
+  "opacity": 100,
+  "useAcrylic": false,
+  "suppressApplicationTitle": true,
+
+
+  "bellStyle": "taskbar",
+  "closeOnExit": "never",
+  "historySize": 500,
+
+
+  "profiles": {
+    "defaults": {
+        "font": {
+            "face": "FiraCode Nerd Font, Operator Mono",
+            "size": 10,
+            "weight": "semi-bold"
         },
-        {
-            "id": "Terminal.PasteFromClipboard",
-            "keys": "ctrl+v"
-        },
-        {
-            "id": "Terminal.DuplicatePaneAuto",
-            "keys": "alt+shift+d"
+        "antialiasingMode": "cleartype",
+        "bellStyle": "taskbar",
+        "closeOnExit": "never",
+        "cursorShape": "underscore",
+        "colorScheme": "Twilite",
+        "unfocusedAppearance": {
+            "colorScheme": "Twilite (Darker)"
         }
-    ],
+    }
+  }
 }

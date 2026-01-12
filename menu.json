@@ -1,11 +1,25 @@
 {
   "newTabMenu": [
     {
+      "type": "profile",
+      "profile": "pwsh"
+    },
+    {
+      "type": "folder",
+      "name": "development",
+      "inline": "never",
+      "allowEmpty": true,
+      "entries": [
+        { "type": "profile", "profile": "WSL" },
+        { "type": "profile", "profile": "mingw" }
+      ]
+    },
+    {
       "type": "folder",
       "name": "ssh",
       "inline": "never",
-      "allowEmpty": false,
-      "entries": [
+      "allowEmpty": true,
+      "entries": [ 
         { "type": "profile", "profile": "guava" },
         { "type": "profile", "profile": "bokchoy" },
         { "type": "profile", "profile": "banana" },

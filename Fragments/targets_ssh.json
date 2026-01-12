@@ -3,29 +3,29 @@
     "list": [
       {
         "commandline": "ssh guava",
-        "icon": "%COZY_ICONS%/guava.png",
+        "icon": "C:/ProgramData/WT/icons/guava.png",
         "name": "guava"
       },
       {
         "commandline": "ssh bokchoy",
-        "icon": "%COZY_ICONS%/bokchoy.png",
+        "icon": "C:/ProgramData/WT/icons/bokchoy.png",
         "name": "bokchoy"
       },
       {
         "commandline": "ssh banana",
-        "icon": "%COZY_ICONS%/banana.png",
+        "icon": "C:/ProgramData/WT/icons/banana.png",
         "name": "banana"
       },
       {
         "commandline": "ssh persimmon",
         "hidden": false,
-        "icon": "%COZY_ICONS%/persimmon.png",
+        "icon": "C:/ProgramData/WT/icons/persimmon.png",
         "name": "persimmon"
       },
       {
         "commandline": "ssh pomegranate",
         "hidden": false,
-        "icon": "%COZY_ICONS%/pomegranate.png",
+        "icon": "C:/ProgramData/WT/icons/pomegranate.png",
         "name": "pomegranate"
       }
     ]

@@ -1,15 +1,14 @@
-$fragmentRoot = "C:\ProgramData\Microsoft\Windows Terminal\Fragments\Cozy-Fragments"
+# install.ps1 — base installer
 
-$iconRoot = "C:\ProgramData\WT\icons"
+$root = $PSScriptRoot
 
-# 
-New-Item -ItemType Directory -Force -Path $fragmentRoot | Out-Null
-New-Item -ItemType Directory -Force -Path $iconRoot | Out-Null
+Write-Host "📦 Cozy Fragments Installer"
+Write-Host "Project root: $root"
 
-# Copy all JSON fragments
-Get-ChildItem -Path "." -Filter "*.json" | ForEach-Object {
-    Copy-Item $_.FullName -Destination $fragmentRoot -Force
-}
+# Run fragment installer
+& "$root\Scripts\wt-install_fragments.ps1"
 
-# Copy all icons
-Copy-Item -Path ".\icons\*.png" -Destination $iconRoot -Force
+# Run config merger
+& "$root\Scripts\wt-merge_config.ps1"
+
+Write-Host "✨ Installation complete"

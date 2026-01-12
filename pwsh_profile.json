@@ -1,8 +1,0 @@
-{
-  "newTabMenu": [
-      {
-      "type": "profile",
-      "profile": "pwsh"
-    }
-  ]
-}

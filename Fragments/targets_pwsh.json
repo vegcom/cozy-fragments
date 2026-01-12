@@ -1,4 +1,5 @@
 {
+  "defaultProfile": "pwsh",
   "profiles": {
     "list": [
       {
