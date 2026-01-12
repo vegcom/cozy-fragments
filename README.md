@@ -27,13 +27,14 @@ $settingsPath = Join-Path $env:LOCALAPPDATA "\Microsoft\Windows Terminal\setting
 
 ## How do?
 
-- Installs fragments
+- Installs (fragments)[./Fragments]
 
 ```pwsh
 &"wt-install_fragments.ps1"
 ```
 
 - Some settings have to be merged to the settings.json
+    - our _"fragments"_ for this are in (Settings)[./Settings]
 
 ```pwsh
 &"wt-merge_config.ps1"
@@ -42,6 +43,10 @@ $settingsPath = Join-Path $env:LOCALAPPDATA "\Microsoft\Windows Terminal\setting
 ## Want a nice colour theme?
 
 Use Twilight - https://github.com/vegcom/WindowsTerminal-Twilite
+
+```pwsh
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/vegcom/WindowsTerminal-Twilite/main/install.ps1'))
+```
 
 ```jsonc
     // Colours

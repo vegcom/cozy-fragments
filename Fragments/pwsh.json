@@ -8,6 +8,14 @@
         "icon": "🌻",
         "name": "pwsh",
         "startingDirectory": "%USERPROFILE%"
+      },
+      {
+        "hidden": true,
+        "name": "Windows PowerShell"
+      },
+      {
+        "hidden": true,
+        "name": "Command Prompt"
       }
     ]
   }
