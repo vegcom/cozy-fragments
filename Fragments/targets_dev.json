@@ -3,7 +3,6 @@
     "list": [
       {
         "commandline": "wsl",
-        "hidden": false,
         "icon": "🐧",
         "name": "WSL",
         "startingDirectory": "%USERPROFILE%"
@@ -15,21 +14,18 @@
       },
       {
         "commandline": "C:/cygwin64/bin/bash --login -i",
-        "hidden": false,
         "icon": "C:/cygwin64/Cygwin.ico",
         "name": "Cygwin"
       },
       {
         "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -ucrt64",
-        "hidden": false,
         "icon": "C:/msys64/ucrt64.ico",
-        "name": "UCRT64 / MSYS2"
+        "name": "UCRT64"
       },
       {
         "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -msys",
-        "hidden": false,
         "icon": "C:/msys64/msys2.ico",
-        "name": "MSYS / MSYS2"
+        "name": "MSYS"
       }
     ]
   }

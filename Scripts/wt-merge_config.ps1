@@ -1,53 +1,30 @@
-function Merge-JsonObject {
-    param(
-        [Parameter(Mandatory)] $Base,
-        [Parameter(Mandatory)] $Overlay
-    )
-
-    foreach ($key in $Overlay.PSObject.Properties.Name) {
-        $overlayValue = $Overlay.$key
-
-        if ($Base.PSObject.Properties.Name -contains $key) {
-            $baseValue = $Base.$key
-
-            # If both sides are objects → recurse
-            if ($baseValue -is [System.Management.Automation.PSObject] -and
-                $overlayValue -is [System.Management.Automation.PSObject]) {
-
-                Merge-JsonObject -Base $baseValue -Overlay $overlayValue
-            }
-            else {
-                # Overlay wins only when explicitly defined
-                $Base.$key = $overlayValue
-            }
-        }
-        else {
-            # New key → add it
-            $Base | Add-Member -NotePropertyName $key -NotePropertyValue $overlayValue
-        }
-    }
-
-    return $Base
-}
+. ./Scripts/Lib/merge-json-object.ps1
+. ./Scripts/Lib/show-dots.ps1
 
 if (-not $settingsPath) {
     $settingsPath = "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
 }
 $backupPath   = "$settingsPath.bak"
 
-# 1. Backup
+Write-Host "🎆 Backup"
+Write-Host "    🌻 $settingsPath -> $backupPath"
 Copy-Item $settingsPath $backupPath -Force
+Show-Dots
 
-# 2. Load user settings
+Write-Host "🎆 Load user settings"
 $settings = Get-Content $settingsPath -Raw | ConvertFrom-Json
+Show-Dots
 
-# 3. Load your fragments
-$config = Get-Content ".\config.json" -Raw | ConvertFrom-Json
-$menu   = Get-Content ".\menu.json"   -Raw | ConvertFrom-Json
+Write-Host "🎆 Load fragments"
+$config = Get-Content ".\Settings\config.json" -Raw | ConvertFrom-Json
+$menu   = Get-Content ".\Settings\menu.json"   -Raw | ConvertFrom-Json
+Show-Dots
 
-# 4. Deep merge
+Write-Host "🎆 Deep merge"
 Merge-JsonObject -Base $settings -Overlay $config | Out-Null
 Merge-JsonObject -Base $settings -Overlay $menu   | Out-Null
+Show-Dots
 
-# 5. Write back
+Write-Host "🎆 Wrte back"
 $settings | ConvertTo-Json -Depth 20 | Set-Content $settingsPath
+Show-Dots

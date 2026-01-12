@@ -1,14 +1,12 @@
 {
 
-  "disabledProfileSources": [
-    "Windows.Terminal.Wsl",
-    "Microsoft.WSL",
-    "Windows.Terminal.Azure",
-    "Windows.Terminal.PowershellCore",
-    "Windows.Terminal.SSH",
-    "Windows.Terminal.VisualStudio",
-    "Default"
-  ],
+  "disabledProfileSources": 
+    [
+      "Windows.Terminal.Wsl",
+      "Windows.Terminal.Azure",
+      "Windows.Terminal.PowershellCore",
+      "Windows.Terminal.VisualStudio"
+    ],
 
 
   "opacity": 100,
@@ -20,7 +18,7 @@
   "closeOnExit": "never",
   "historySize": 500,
 
-
+  "defaultProfile": "pwsh",
   "profiles": {
     "defaults": {
         "font": {

@@ -7,17 +7,20 @@
     {
       "type": "folder",
       "name": "development",
-      "inline": "never",
+      "inline": "auto",
       "allowEmpty": true,
       "entries": [
         { "type": "profile", "profile": "WSL" },
-        { "type": "profile", "profile": "mingw" }
+        { "type": "profile", "profile": "mingw" },
+        { "type": "profile", "profile": "Cygwin" },
+        { "type": "profile", "profile": "UCRT64" },
+        { "type": "profile", "profile": "MSYS" }
       ]
     },
     {
       "type": "folder",
       "name": "ssh",
-      "inline": "never",
+      "inline": "auto",
       "allowEmpty": true,
       "entries": [ 
         { "type": "profile", "profile": "guava" },
