@@ -1,7 +1,7 @@
 # Cozy-Fragments
 
 <p style="text-align: center;"> <img src="https://raw.githubusercontent.com/vegcom/Twilite-Theme/main/assets/icon.png" alt="icon" width="148"/> </p>
-<p style="text-align: center;"> <i>Forkable,&emsp;<br>&emsp;fun,<br>&emsp;&emsp;&emsp;and cozy</i></p>
+<p style="text-align: center;"> <i>Forkable,&emsp;<br>&emsp;&emsp;fun,<br>&emsp;&emsp;&emsp;and cozy</i></p>
 
 **Wanted terminal fragments that provide:**
 
