@@ -1,7 +1,5 @@
 # Cozy-Fragments
 
-_Forkable, fun, and cozy_
-
 **Wanted terminal fragments that provide:**
 
 - base configuration
@@ -9,10 +7,13 @@ _Forkable, fun, and cozy_
 - profiles
 - a cozy bit of flair
 
+<p style="text-align: center;"> <img src="https://raw.githubusercontent.com/vegcom/Twilite-Theme/main/assets/icon.png" alt="icon" width="148"/> </p>
+<p style="text-align: center;"> <i>Forkable,&emsp;<br>&emsp;fun,<br>&emsp;&emsp;&emsp;and cozy</i></p>
+
 ## Quick Start
 
 ```pwsh
-& install.ps1
+&"install.ps1"
 ```
 
 - MSXI paths by default work 
@@ -29,13 +30,13 @@ $settingsPath = Join-Path $env:LOCALAPPDATA "\Microsoft\Windows Terminal\setting
 - Installs fragments
 
 ```pwsh
-& wt-install_fragments.ps1
+&"wt-install_fragments.ps1"
 ```
 
 - Some settings have to be merged to the settings.json
 
 ```pwsh
-& wt-merge_config.ps1
+&"wt-merge_config.ps1"
 ```
 
 ## Want a nice colour theme?
