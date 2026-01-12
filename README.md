@@ -27,14 +27,14 @@ $settingsPath = Join-Path $env:LOCALAPPDATA "\Microsoft\Windows Terminal\setting
 
 ## How do?
 
-- Installs (fragments)[./Fragments]
+- Installs [fragments](./Fragments)
 
 ```pwsh
 &"wt-install_fragments.ps1"
 ```
 
 - Some settings have to be merged to the settings.json
-    - our _"fragments"_ for this are in (Settings)[./Settings]
+    - our _"fragments"_ for this are in [Settings](./Settings)
 
 ```pwsh
 &"wt-merge_config.ps1"
