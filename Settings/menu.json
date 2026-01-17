@@ -8,26 +8,62 @@
       "type": "folder",
       "name": "development",
       "inline": "auto",
-      "allowEmpty": true,
+      "allowEmpty": false,
       "entries": [
-        { "type": "profile", "profile": "WSL" },
+        {
+          "type": "folder",
+          "name": "Cygwin",
+          "inline": "auto",
+          "allowEmpty": false,
+          "entries": [{ "type": "profile", "profile": "Cygwin" }]
+        },
+        {
+          "type": "folder",
+          "name": "WSL",
+          "inline": "auto",
+          "allowEmpty": false,
+          "entries": [{ "type": "profile", "profile": "WSL" }]
+        },
         { "type": "profile", "profile": "mingw" },
-        { "type": "profile", "profile": "Cygwin" },
-        { "type": "profile", "profile": "UCRT64" },
-        { "type": "profile", "profile": "MSYS" }
+        {
+          "type": "folder",
+          "name": "mysys",
+          "inline": "auto",
+          "allowEmpty": false,
+          "entries": [
+            { "type": "profile", "profile": "UCRT64" },
+            { "type": "profile", "profile": "MSYS" },
+            { "type": "profile", "profile": "QMK" }
+          ]
+        }
       ]
     },
     {
       "type": "folder",
       "name": "ssh",
       "inline": "auto",
-      "allowEmpty": true,
-      "entries": [ 
-        { "type": "profile", "profile": "guava" },
-        { "type": "profile", "profile": "bokchoy" },
-        { "type": "profile", "profile": "banana" },
-        { "type": "profile", "profile": "persimmon" },
-        { "type": "profile", "profile": "pomegranate" }
+      "allowEmpty": false,
+      "entries": [
+        {
+          "type": "folder",
+          "name": "Computers",
+          "inline": "auto",
+          "allowEmpty": false,
+          "entries": [{ "type": "profile", "profile": "bokchoy" }]
+        },
+        {
+          "type": "folder",
+          "name": "Servers",
+          "inline": "auto",
+          "allowEmpty": false,
+          "entries": [
+            { "type": "profile", "profile": "guava" },
+            { "type": "profile", "profile": "bokchoy" },
+            { "type": "profile", "profile": "banana" },
+            { "type": "profile", "profile": "persimmon" },
+            { "type": "profile", "profile": "pomegranate" }
+          ]
+        }
       ]
     }
   ]

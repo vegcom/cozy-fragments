@@ -2,14 +2,14 @@
   "profiles": {
     "list": [
       {
-        "commandline": "ssh guava",
-        "icon": "C:/ProgramData/WT/icons/Cozy-Icons/guava.png",
-        "name": "guava"
-      },
-      {
         "commandline": "ssh bokchoy",
         "icon": "C:/ProgramData/WT/icons/Cozy-Icons/bokchoy.png",
         "name": "bokchoy"
+      },
+      {
+        "commandline": "ssh guava",
+        "icon": "C:/ProgramData/WT/icons/Cozy-Icons/guava.png",
+        "name": "guava"
       },
       {
         "commandline": "ssh banana",
