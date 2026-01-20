@@ -8,28 +8,24 @@
       "type": "folder",
       "name": "development",
       "inline": "auto",
-      "allowEmpty": false,
+      "allowEmpty": true,
       "entries": [
         {
           "type": "folder",
-          "name": "Cygwin",
+          "name": "Linux layers",
           "inline": "auto",
-          "allowEmpty": false,
-          "entries": [{ "type": "profile", "profile": "Cygwin" }]
+          "allowEmpty": true,
+          "entries": [
+            { "type": "profile", "profile": "WSL" },
+            { "type": "profile", "profile": "Cygwin" },
+            { "type": "profile", "profile": "mingw" }
+          ]
         },
         {
           "type": "folder",
-          "name": "WSL",
+          "name": "MSYS2",
           "inline": "auto",
-          "allowEmpty": false,
-          "entries": [{ "type": "profile", "profile": "WSL" }]
-        },
-        { "type": "profile", "profile": "mingw" },
-        {
-          "type": "folder",
-          "name": "mysys",
-          "inline": "auto",
-          "allowEmpty": false,
+          "allowEmpty": true,
           "entries": [
             { "type": "profile", "profile": "UCRT64" },
             { "type": "profile", "profile": "MSYS" },
@@ -40,25 +36,24 @@
     },
     {
       "type": "folder",
-      "name": "ssh",
+      "name": "SSH",
       "inline": "auto",
-      "allowEmpty": false,
+      "allowEmpty": true,
       "entries": [
         {
           "type": "folder",
           "name": "Computers",
           "inline": "auto",
-          "allowEmpty": false,
+          "allowEmpty": true,
           "entries": [{ "type": "profile", "profile": "bokchoy" }]
         },
         {
           "type": "folder",
           "name": "Servers",
           "inline": "auto",
-          "allowEmpty": false,
+          "allowEmpty": true,
           "entries": [
             { "type": "profile", "profile": "guava" },
-            { "type": "profile", "profile": "bokchoy" },
             { "type": "profile", "profile": "banana" },
             { "type": "profile", "profile": "persimmon" },
             { "type": "profile", "profile": "pomegranate" }
